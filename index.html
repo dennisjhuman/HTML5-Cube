@@ -9,6 +9,7 @@
             overflow: hidden;
         }
         body{
+            margin: 0;
             -webkit-perspective:800px;
             -moz-perspective:800px;
             -ms-perspective:800px;
@@ -19,6 +20,16 @@
             background: -ms-repeating-linear-gradient(45deg, transparent, rgba(255,255,255,.05) 350px), #333;
             background: -o-repeating-linear-gradient(45deg, transparent, rgba(255,255,255,.05) 350px), #333;
             background: repeating-linear-gradient(45deg, transparent, rgba(255,255,255,.05) 350px), #333;
+        }
+        #badge{
+            overflow:hidden;
+            position: fixed;
+            top:0;
+            right:0;
+            width: 149px;
+            height: 149px;
+            text-indent: -150px;
+            background: transparent url("images/el_badge.png") no-repeat 0 0;
         }
         #cube{
             position: absolute;
@@ -185,5 +196,6 @@
         <div></div>
         <div></div>
     </div>
+    <a href="https://github.com/helgri/HTML5-Cube" id="badge">Watch me on GitHub</a>
 </body>
 </html>
